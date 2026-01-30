@@ -4,45 +4,45 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace Devoir2_abstrFactory_builder_factory.Builder
+namespace Devoir2_abstrFactory_builder_factory.Builder.v2
 {
-    internal class DuplexBuilder : IBuilder
+    internal class HouseBuilder : IBuilder
     {
         IAbstractFactory factory;
-        Duplex duplex;
-        
-        public DuplexBuilder(IAbstractFactory factory)
+        House house;
+
+        public HouseBuilder(IAbstractFactory factory)
         {
             this.factory = factory;
-            duplex = new Duplex();
-        }
-        public IBuilder buildBasement()
-        {
-            duplex.setBasement(factory.makeBasement());
-            return this;
+            house = new House();
         }
 
+        public IBuilder buildBasement()
+        {
+            house.setBasement(factory.makeBasement());
+            return this; 
+        }
+        public IBuilder buildStructure()
+        {
+            house.setStructure(factory.makeStructure());
+            return this;
+        }
         public IBuilder buildInterior()
         {
-            duplex.setInterior(factory.makeInterior());
+            house.setInterior(factory.makeInterior());
             return this;
         }
 
         public IBuilder buildRoof()
         {
-            duplex.setRoof(factory.makeRoof());
+            house.setRoof(factory.makeRoof());
             return this;
         }
 
-        public IBuilder buildStructure()
-        {
-            duplex.setStructure(factory.makeStructure());
-            return this;
-        }
 
         public IBuilding make()
         {
-            return duplex;
+            return house;
         }
     }
 }

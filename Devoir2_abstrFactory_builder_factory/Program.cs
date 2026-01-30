@@ -4,6 +4,8 @@ using Devoir2_abstrFactory_builder_factory.Builder;
 using Devoir2_abstrFactory_builder_factory.Data.Building;
 using Devoir2_abstrFactory_builder_factory.FactoryMethod.v2.Basement;
 using System.Diagnostics;
+
+
 Main();
 static void Main()
 {
@@ -61,6 +63,4 @@ static void Main()
 
     building = director.build();
     Debug.Assert("This duplex as: modern basement, modern structure, modern interior, modern roof" == building.Display());
-
-    Console.WriteLine("all good");
 }

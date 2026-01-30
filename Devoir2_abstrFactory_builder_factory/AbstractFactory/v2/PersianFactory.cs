@@ -6,29 +6,27 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace Devoir2_abstrFactory_builder_factory.AbstractFactory
+namespace Devoir2_abstrFactory_builder_factory.AbstractFactory.v2
 {
-    internal class QuebecoisFactory : IAbstractFactory
+    internal class PersianFactory: IAbstractFactory
     {
         public IBasement makeBasement()
         {
-            return new QuebecoisBasement();
+            return new PersianBasement();
         }
         public IStructure makeStructure()
         {
-            return new QuebecoisStructure();
+            return new PersianStructure();
         }
 
         public IInterior makeInterior()
         {
-            return new QuebecoisInterior();
+            return new PersianInterior();
         }
 
         public IRoof makeRoof()
         {
-            return new QuebecoisRoof();
+            return new PersianRoof();
         }
-
-
     }
 }
