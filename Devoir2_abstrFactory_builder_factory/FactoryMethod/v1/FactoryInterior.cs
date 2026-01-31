@@ -1,6 +1,5 @@
-﻿using Devoir2_abstrFactory_builder_factory.Data;
-using Devoir2_abstrFactory_builder_factory.Data.Product.Basement;
-using Devoir2_abstrFactory_builder_factory.Data.Product.Interior;
+﻿using Devoir2_abstrFactory_builder_factory.Data.v1;
+using Devoir2_abstrFactory_builder_factory.Data.v1.Product.Interior;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;

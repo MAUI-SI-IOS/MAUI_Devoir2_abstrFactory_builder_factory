@@ -1,0 +1,14 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Text;
+
+namespace Data.v2.Product.Interior
+{
+    internal class QuebecoisInterior : IInterior
+    {
+        public string display()
+        {
+            return "quebecois interior";
+        }
+    }
+}

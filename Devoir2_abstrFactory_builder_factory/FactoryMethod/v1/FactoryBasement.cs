@@ -1,11 +1,12 @@
-﻿using Devoir2_abstrFactory_builder_factory.Data;
-using Devoir2_abstrFactory_builder_factory.Data.Product.Basement;
+﻿using Data.v1;
+using Data.v1.Product;
+using Data.v1.Product.Basement;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Text;
 
-namespace Devoir2_abstrFactory_builder_factory.FactoryMethod.v1
+namespace FactoryMethod.v1
 {
     internal class FactoryBasement
     {

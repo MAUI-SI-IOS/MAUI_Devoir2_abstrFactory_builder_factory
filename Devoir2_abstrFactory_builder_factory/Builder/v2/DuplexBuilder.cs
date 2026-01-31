@@ -1,10 +1,11 @@
-﻿using Devoir2_abstrFactory_builder_factory.AbstractFactory;
-using Devoir2_abstrFactory_builder_factory.Data.Building;
+﻿using AbstractFactory.v2;
+using Data.v2.Building;
+using Devoir2_abstrFactory_builder_factory.Builder.v2;
 using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace Devoir2_abstrFactory_builder_factory.Builder.v2
+namespace Builder.v2
 {
     internal class DuplexBuilder : IBuilder
     {

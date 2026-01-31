@@ -353,23 +353,21 @@ Le diagramme doit montrer les relations entre entites suivantes :
 - Aggregation
 
 -------------------------------------------------------------------------------------------------------------------
+### data
+#### building component
+- [x] Implementation des interfaces (IBasement, IStructure, IInterior, IRoof)
+- [x] Implementation des subclass des interfaces 
+- [ ]
 
-On vas suivre la method GoF[^GoF] une factory method donc nous evitons le switch.
+#### building (house, duplex)
+- [x] Implementation des champs (IBasement, IStructure, IInterior, IRoof)
+- [ ] Implementation des setters
+
 
 ### Factory method
-- [ ] integration des interfaces (IBasement, IStructure, IInterior, IRoof)
 
-- [ ] IBasementFactory  <- QuebecoisBasementFactory, PersianBasementFactory, ModernBasementFactory
-- [ ] subclass de IBasementFactory retourne IBasement
-    
-- [ ] IStructureFactory <- QuebecoisStructureFactory, PersianStructureFactory, ModernStructureFactory
-- [ ] subclass de IStructureFactory retourne IStructure
-      
-- [ ] IInteriorFactory  <- QuebecoisInteriorFactory, PersianInteriorFactory, ModernInteriorFactory
-- [ ] subclass de IInteriorFactory retourne IInterior
+- [x] Implementations des FactoryMethods et du switch case
 
-- [ ] IRoofFactory      <- QuebecoisRoofFactory, PersianRoofFactory, ModernRoofFactoryreturn
-- [ ] subclass de IRoofFactory retourne IRoof
 
 ### Builder
 

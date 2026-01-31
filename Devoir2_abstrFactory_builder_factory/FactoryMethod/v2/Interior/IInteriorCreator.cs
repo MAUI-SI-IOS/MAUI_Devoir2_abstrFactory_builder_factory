@@ -1,4 +1,4 @@
-﻿using Devoir2_abstrFactory_builder_factory.Data.Product.Interior;
+﻿using Devoir2_abstrFactory_builder_factory.Data.v2.Product.Interior;
 using System;
 using System.Collections.Generic;
 using System.Text;
