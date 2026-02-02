@@ -5,12 +5,12 @@ using System.Text;
 
 namespace Builder.v1
 {
-    internal interface IDuplexBuilder
+    public interface IDuplexBuilder
     {
-        public IHouseBuilder buildBasement();
-        public IHouseBuilder buildStructure();
-        public IHouseBuilder buildInterior();
-        public IHouseBuilder buildRoof();
+        public IDuplexBuilder buildBasement();
+        public IDuplexBuilder buildStructure();
+        public IDuplexBuilder buildInterior();
+        public IDuplexBuilder buildRoof();
         public Duplex getDuplex();
     }
 }
