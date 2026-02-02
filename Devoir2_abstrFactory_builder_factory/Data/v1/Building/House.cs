@@ -11,7 +11,7 @@ using FactoryMethod.v1;
 
 namespace Data.v1.Building
 {
-    internal class House 
+    public class House 
     {
         IBasement   basement;
         IStructure  structure;

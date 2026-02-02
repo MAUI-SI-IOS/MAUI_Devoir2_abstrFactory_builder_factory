@@ -10,7 +10,7 @@ using FactoryMethod.v1;
 
 namespace Data.v1.Building
 {
-    internal class Duplex
+    public class Duplex
     {
         IBasement basement;
         IStructure structure;
